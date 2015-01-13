@@ -52,11 +52,11 @@ int main()
 	 Init();
      ADC_init();
 	 uint16_t  sonuc;
-     float sicaklik;
+     float voltaj;
 	 while(1)
 	  {
 		sonuc=adc_oku();
-		sicaklik=sonuc*0.287109375;
+		voltaj=sonuc*0.00283203125; //    VDD/1024 = 2.9/1024
          delay();
        }
 }
