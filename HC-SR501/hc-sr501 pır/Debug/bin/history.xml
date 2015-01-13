@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=HC-SR501 PIR.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\HC-SR501 PIR -TC:\CooCox\CoIDE\configuration\ProgramData\HC-SR501 PIR/arm-gcc-link.ld -g">
+      <target file="HC-SR501 PIR.elf" lastModified="14ae473c289">
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="14ae473bbc0"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14ae473bc14"/>
+         <source file="..\obj\main.o" lastModified="14ae473bc83"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14ae473bd70"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14ae473be14"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14ae473be99"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="14ae473bf12"/>
+         <source file="..\obj\misc.o" lastModified="14ae473bf7a"/>
+      </target>
+   </processor>
+</history>

@@ -1,34 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC 05 Bluetooth\cmsis_boot -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC 05 Bluetooth\cmsis -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC 05 Bluetooth -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC 05 Bluetooth\cmsis_lib\include -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC 05 Bluetooth\Delay -I..\..\..\..\..\Users\EMP_OTTO\Desktop -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC 05 Bluetooth\cmsis_lib">
-      <target file="syscalls.o" lastModified="14ada5b69c4">
-         <source file="..\..\..\syscalls\syscalls.c" lastModified="14ada5a48ec"/>
-      </target>
-      <target file="stm32f4xx_gpio.o" lastModified="14ada32e1b2">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14ada2cd95f"/>
-      </target>
       <target file="printf.o" lastModified="14ada31fdab">
          <source file="..\..\..\stdio\printf.c" lastModified="14ada2d42b0"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="14ada32e200">
+   </processor>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\EMP_OTTO\Documents\GitHub\STM32\HC 05 Bluetooth -I..\..\..\..\..\Users\EMP_OTTO\Documents\GitHub\STM32\HC 05 Bluetooth\cmsis -I..\..\..\..\..\Users\EMP_OTTO\Documents\GitHub\STM32 -I..\..\..\..\..\Users\EMP_OTTO\Documents\GitHub\STM32\HC 05 Bluetooth\cmsis_boot -I..\..\..\..\..\Users\EMP_OTTO\Documents\GitHub\STM32\HC 05 Bluetooth\cmsis_lib\include -I..\..\..\..\..\Users\EMP_OTTO\Documents\GitHub\STM32\HC 05 Bluetooth\cmsis_lib -I..\..\..\..\..\Users\EMP_OTTO\Documents\GitHub\STM32\HC 05 Bluetooth\Delay">
+      <target file="syscalls.o" lastModified="14adfcd3812">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="14ada5a48ec"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="14adfcd36b8">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14ada2cd95f"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="14adfcd372f">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14ada2e1450"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="14ada32fe17">
+      <target file="startup_stm32f4xx.o" lastModified="14adfcd3511">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14ada32f689"/>
       </target>
-      <target file="stm32f4xx_usart.o" lastModified="14ada32e03b">
+      <target file="stm32f4xx_usart.o" lastModified="14adfcd34b1">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="14ada2d020c"/>
       </target>
-      <target file="main.o" lastModified="14adf47987d">
-         <source file="..\..\..\main.c" lastModified="14adf47918d"/>
+      <target file="main.o" lastModified="14adfd51709">
+         <source file="..\..\..\main.c" lastModified="14adfd50ca1"/>
       </target>
-      <target file="delay.o" lastModified="14ada32df80">
+      <target file="delay.o" lastModified="14adfcd33eb">
          <source file="..\..\..\Delay\delay.c" lastModified="14aa172fecf"/>
       </target>
-      <target file="stm32f4xx_rcc.o" lastModified="14ada32e154">
+      <target file="stm32f4xx_rcc.o" lastModified="14adfcd364b">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14ada2ccddd"/>
       </target>
-      <target file="misc.o" lastModified="14ada32e25d">
+      <target file="misc.o" lastModified="14adfcd386a">
          <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="14ada32a686"/>
       </target>
    </processor>

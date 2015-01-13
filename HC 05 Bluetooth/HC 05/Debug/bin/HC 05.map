@@ -5,6 +5,7 @@ Common symbol       size              file
 buff                0x64              ..\obj\main.o
 usart_buffer        0x64              ..\obj\main.o
 gelen               0x1               ..\obj\main.o
+sayac               0x4               ..\obj\delay.o
 
 Discarded input sections
 
@@ -19,7 +20,6 @@ Discarded input sections
                 0x00000000       0x40 ..\obj\delay.o
  .text.delay_us
                 0x00000000       0x40 ..\obj\delay.o
- COMMON         0x00000000        0x0 ..\obj\delay.o
  .text          0x00000000        0x0 ..\obj\stm32f4xx_usart.o
  .data          0x00000000        0x0 ..\obj\stm32f4xx_usart.o
  .bss           0x00000000        0x0 ..\obj\stm32f4xx_usart.o
@@ -209,8 +209,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x60 ..\obj\syscalls.o
  .debug_ranges  0x00000000       0x50 ..\obj\syscalls.o
- .debug_line    0x00000000      0x174 ..\obj\syscalls.o
- .debug_str     0x00000000      0x2d4 ..\obj\syscalls.o
+ .debug_line    0x00000000      0x183 ..\obj\syscalls.o
+ .debug_str     0x00000000      0x2f2 ..\obj\syscalls.o
  .comment       0x00000000       0x71 ..\obj\syscalls.o
  .ARM.attributes
                 0x00000000       0x33 ..\obj\syscalls.o
@@ -465,37 +465,40 @@ Linker script and memory map
 .igot.plt       0x20000010        0x0 load address 0x08000cb0
  .igot.plt      0x00000000        0x0 ..\obj\delay.o
 
-.bss            0x20000010       0xd0 load address 0x08000cb0
+.bss            0x20000010       0xd4 load address 0x08000cb0
                 0x20000010                . = ALIGN (0x4)
                 0x20000010                __bss_start__ = .
                 0x20000010                _sbss = __bss_start__
  *(.bss*)
  .bss           0x20000010        0x4 ..\obj\main.o
-                0x20000010                sayac
+                0x20000010                serialsayac
  *(COMMON)
- COMMON         0x20000014       0xc9 ..\obj\main.o
-                0x20000014                buff
-                0x20000078                usart_buffer
-                0x200000dc                gelen
-                0x200000e0                . = ALIGN (0x4)
- *fill*         0x200000dd        0x3 
-                0x200000e0                __bss_end__ = .
-                0x200000e0                _ebss = __bss_end__
+ COMMON         0x20000014        0x4 ..\obj\delay.o
+                0x20000014                sayac
+ COMMON         0x20000018       0xc9 ..\obj\main.o
+                0x20000018                buff
+                0x2000007c                usart_buffer
+                0x200000e0                gelen
+                0x200000e4                . = ALIGN (0x4)
+ *fill*         0x200000e1        0x3 
+                0x200000e4                __bss_end__ = .
+                0x200000e4                _ebss = __bss_end__
 
-.heap           0x200000e0        0x0
-                0x200000e0                __end__ = .
-                0x200000e0                _end = __end__
-                0x200000e0                end = __end__
+.heap           0x200000e4        0x0
+                0x200000e4                __end__ = .
+                0x200000e4                _end = __end__
+                0x200000e4                end = __end__
  *(.heap*)
-                0x200000e0                __HeapLimit = .
+                0x200000e4                __HeapLimit = .
 
-.co_stack       0x200000e0      0x800 load address 0x08000d80
-                0x200000e0                . = ALIGN (0x8)
+.co_stack       0x200000e4      0x804 load address 0x08000d84
+                0x200000e8                . = ALIGN (0x8)
+ *fill*         0x200000e4        0x4 
  *(.co_stack .co_stack.*)
- .co_stack      0x200000e0      0x800 ..\obj\startup_stm32f4xx.o
-                0x200000e0                pulStack
+ .co_stack      0x200000e8      0x800 ..\obj\startup_stm32f4xx.o
+                0x200000e8                pulStack
                 0x20020000                __StackTop = (ORIGIN (ram) + 0x20000)
-                0x2001f800                __StackLimit = (__StackTop - SIZEOF (.co_stack))
+                0x2001f7fc                __StackLimit = (__StackTop - SIZEOF (.co_stack))
                 0x20020000                PROVIDE (__stack, __StackTop)
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region ram  overflowed with stack)
 LOAD ..\obj\delay.o
@@ -514,25 +517,25 @@ LOAD c:/program files/gnu tools arm embedded/4.8 2014q2/bin/../lib/gcc/arm-none-
 END GROUP
 OUTPUT(HC 05.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x3657
+.debug_info     0x00000000     0x3634
  .debug_info    0x00000000      0x6f1 ..\obj\delay.o
  .debug_info    0x000006f1      0x9c2 ..\obj\stm32f4xx_usart.o
  .debug_info    0x000010b3       0xed ..\obj\startup_stm32f4xx.o
- .debug_info    0x000011a0      0x799 ..\obj\main.o
- .debug_info    0x00001939      0xc4d ..\obj\stm32f4xx_rcc.o
- .debug_info    0x00002586      0x602 ..\obj\stm32f4xx_gpio.o
- .debug_info    0x00002b88      0x592 ..\obj\system_stm32f4xx.o
- .debug_info    0x0000311a      0x53d ..\obj\misc.o
+ .debug_info    0x000011a0      0x776 ..\obj\main.o
+ .debug_info    0x00001916      0xc4d ..\obj\stm32f4xx_rcc.o
+ .debug_info    0x00002563      0x602 ..\obj\stm32f4xx_gpio.o
+ .debug_info    0x00002b65      0x592 ..\obj\system_stm32f4xx.o
+ .debug_info    0x000030f7      0x53d ..\obj\misc.o
 
-.debug_abbrev   0x00000000      0xb28
+.debug_abbrev   0x00000000      0xb26
  .debug_abbrev  0x00000000      0x18e ..\obj\delay.o
  .debug_abbrev  0x0000018e      0x155 ..\obj\stm32f4xx_usart.o
  .debug_abbrev  0x000002e3       0xb0 ..\obj\startup_stm32f4xx.o
- .debug_abbrev  0x00000393      0x194 ..\obj\main.o
- .debug_abbrev  0x00000527      0x1e3 ..\obj\stm32f4xx_rcc.o
- .debug_abbrev  0x0000070a      0x1a3 ..\obj\stm32f4xx_gpio.o
- .debug_abbrev  0x000008ad      0x136 ..\obj\system_stm32f4xx.o
- .debug_abbrev  0x000009e3      0x145 ..\obj\misc.o
+ .debug_abbrev  0x00000393      0x192 ..\obj\main.o
+ .debug_abbrev  0x00000525      0x1e3 ..\obj\stm32f4xx_rcc.o
+ .debug_abbrev  0x00000708      0x1a3 ..\obj\stm32f4xx_gpio.o
+ .debug_abbrev  0x000008ab      0x136 ..\obj\system_stm32f4xx.o
+ .debug_abbrev  0x000009e1      0x145 ..\obj\misc.o
 
 .debug_aranges  0x00000000      0x418
  .debug_aranges
@@ -562,33 +565,33 @@ OUTPUT(HC 05.elf elf32-littlearm)
  .debug_ranges  0x00000348       0x20 ..\obj\system_stm32f4xx.o
  .debug_ranges  0x00000368       0x30 ..\obj\misc.o
 
-.debug_line     0x00000000     0x173d
- .debug_line    0x00000000      0x225 ..\obj\delay.o
- .debug_line    0x00000225      0x4ad ..\obj\stm32f4xx_usart.o
- .debug_line    0x000006d2       0xa4 ..\obj\startup_stm32f4xx.o
- .debug_line    0x00000776      0x29a ..\obj\main.o
- .debug_line    0x00000a10      0x5a5 ..\obj\stm32f4xx_rcc.o
- .debug_line    0x00000fb5      0x34a ..\obj\stm32f4xx_gpio.o
- .debug_line    0x000012ff      0x1ee ..\obj\system_stm32f4xx.o
- .debug_line    0x000014ed      0x250 ..\obj\misc.o
+.debug_line     0x00000000     0x18c1
+ .debug_line    0x00000000      0x252 ..\obj\delay.o
+ .debug_line    0x00000252      0x4e9 ..\obj\stm32f4xx_usart.o
+ .debug_line    0x0000073b       0xb3 ..\obj\startup_stm32f4xx.o
+ .debug_line    0x000007ee      0x2d4 ..\obj\main.o
+ .debug_line    0x00000ac2      0x5e1 ..\obj\stm32f4xx_rcc.o
+ .debug_line    0x000010a3      0x386 ..\obj\stm32f4xx_gpio.o
+ .debug_line    0x00001429      0x20c ..\obj\system_stm32f4xx.o
+ .debug_line    0x00001635      0x28c ..\obj\misc.o
 
-.debug_str      0x00000000     0x18f5
- .debug_str     0x00000000      0x778 ..\obj\delay.o
-                                0x7d3 (size before relaxing)
- .debug_str     0x00000778      0x4e3 ..\obj\stm32f4xx_usart.o
-                                0x691 (size before relaxing)
- .debug_str     0x00000c5b       0xb2 ..\obj\startup_stm32f4xx.o
-                                0x149 (size before relaxing)
- .debug_str     0x00000d0d      0x2a3 ..\obj\main.o
-                                0xa1c (size before relaxing)
- .debug_str     0x00000fb0      0x5e5 ..\obj\stm32f4xx_rcc.o
-                                0x852 (size before relaxing)
- .debug_str     0x00001595      0x195 ..\obj\stm32f4xx_gpio.o
-                                0x4a5 (size before relaxing)
- .debug_str     0x0000172a       0xb6 ..\obj\system_stm32f4xx.o
-                                0x3ac (size before relaxing)
- .debug_str     0x000017e0      0x115 ..\obj\misc.o
-                                0x3d0 (size before relaxing)
+.debug_str      0x00000000     0x1973
+ .debug_str     0x00000000      0x781 ..\obj\delay.o
+                                0x7e2 (size before relaxing)
+ .debug_str     0x00000781      0x4f2 ..\obj\stm32f4xx_usart.o
+                                0x6a0 (size before relaxing)
+ .debug_str     0x00000c73       0xc1 ..\obj\startup_stm32f4xx.o
+                                0x158 (size before relaxing)
+ .debug_str     0x00000d34      0x2be ..\obj\main.o
+                                0xa2a (size before relaxing)
+ .debug_str     0x00000ff2      0x5f4 ..\obj\stm32f4xx_rcc.o
+                                0x861 (size before relaxing)
+ .debug_str     0x000015e6      0x1a4 ..\obj\stm32f4xx_gpio.o
+                                0x4b4 (size before relaxing)
+ .debug_str     0x0000178a       0xc5 ..\obj\system_stm32f4xx.o
+                                0x3bb (size before relaxing)
+ .debug_str     0x0000184f      0x124 ..\obj\misc.o
+                                0x3df (size before relaxing)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 ..\obj\delay.o
@@ -620,12 +623,12 @@ OUTPUT(HC 05.elf elf32-littlearm)
  .ARM.attributes
                 0x00000165       0x33 ..\obj\misc.o
 
-.debug_frame    0x00000000      0xc4c
+.debug_frame    0x00000000      0xc48
  .debug_frame   0x00000000       0xa4 ..\obj\delay.o
  .debug_frame   0x000000a4      0x344 ..\obj\stm32f4xx_usart.o
  .debug_frame   0x000003e8       0x48 ..\obj\startup_stm32f4xx.o
- .debug_frame   0x00000430       0xa8 ..\obj\main.o
- .debug_frame   0x000004d8      0x4d8 ..\obj\stm32f4xx_rcc.o
- .debug_frame   0x000009b0      0x19c ..\obj\stm32f4xx_gpio.o
- .debug_frame   0x00000b4c       0x64 ..\obj\system_stm32f4xx.o
- .debug_frame   0x00000bb0       0x9c ..\obj\misc.o
+ .debug_frame   0x00000430       0xa4 ..\obj\main.o
+ .debug_frame   0x000004d4      0x4d8 ..\obj\stm32f4xx_rcc.o
+ .debug_frame   0x000009ac      0x19c ..\obj\stm32f4xx_gpio.o
+ .debug_frame   0x00000b48       0x64 ..\obj\system_stm32f4xx.o
+ .debug_frame   0x00000bac       0x9c ..\obj\misc.o

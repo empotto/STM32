@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC-SR501\cmsis_lib\include -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC-SR501\cmsis_boot -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC-SR501\cmsis -I..\..\..\..\..\Users\EMP_OTTO\Desktop -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC-SR501\cmsis_lib -I..\..\..\..\..\Users\EMP_OTTO\Desktop\HC-SR501">
+      <target file="stm32f4xx_rcc.o" lastModified="14ae473bd70">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14ae46e3901"/>
+      </target>
+      <target file="stm32f4xx_exti.o" lastModified="14ae473bf12">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="14ae46e5acd"/>
+      </target>
+      <target file="misc.o" lastModified="14ae473bf7a">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="14ae46e7683"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="14ae473be99">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14ae46e1910"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="14ae473bbc0">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="14ae46e8f3c"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="14ae473be14">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14ae46e46fa"/>
+      </target>
+      <target file="main.o" lastModified="14ae473bc83">
+         <source file="..\..\..\main.c" lastModified="14ae4727b8c"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="14ae473bc14">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14ae46e18d5"/>
+      </target>
+   </processor>
+</history>
