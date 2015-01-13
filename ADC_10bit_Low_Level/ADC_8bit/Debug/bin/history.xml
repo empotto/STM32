@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=ADC_8bit.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\ADC_8bit -TC:\CooCox\CoIDE\configuration\ProgramData\ADC_8bit/arm-gcc-link.ld -g">
+      <target file="ADC_8bit.elf" lastModified="140fd9c996c">
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="140fd95bc85"/>
+         <source file="..\obj\main.o" lastModified="140fd9c974f"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="140fd95bdd2"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="140fd95be84"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="140fd95bf0a"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="140fd95bf7c"/>
+         <source file="..\obj\misc.o" lastModified="140fd95bfec"/>
+      </target>
+   </processor>
+</history>
