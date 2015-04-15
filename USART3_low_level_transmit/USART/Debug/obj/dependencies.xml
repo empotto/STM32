@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Users\EMP_OTTO\Desktop\STMProgramlar /I..\..\..\..\..\Users\EMP_OTTO\Desktop\STMProgramlar\USART3_low_level_transmit /I..\..\..\..\..\Users\EMP_OTTO\Desktop\STMProgramlar\USART3_low_level_transmit\cmsis_lib /I..\..\..\..\..\Users\EMP_OTTO\Desktop\STMProgramlar\USART3_low_level_transmit\cmsis /I..\..\..\..\..\Users\EMP_OTTO\Desktop\STMProgramlar\USART3_low_level_transmit\cmsis_boot /I..\..\..\..\..\Users\EMP_OTTO\Desktop\STMProgramlar\USART3_low_level_transmit\cmsis_lib\include">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="1401a16c8a4">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="1401a16d23d">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="14019fc5282">
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="14019fc5284">
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="1403a3a9618">
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1403f852465">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1401a16d23f">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="14019fc5280">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="14019fc4e91">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="1401a16c903">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="1401a16c8a8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14019fc4e90">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="14019fc5281">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="14019fca47e">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="14019fc5275">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1401a16c907">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\EMP_OTTO\Desktop\Programlar\USART3_low_level_transmit\cmsis_lib\include /I..\..\..\..\..\Users\EMP_OTTO\Desktop\Programlar\USART3_low_level_transmit\cmsis_lib /I..\..\..\..\..\Users\EMP_OTTO\Desktop\Programlar\USART3_low_level_transmit\cmsis /I..\..\..\..\..\Users\EMP_OTTO\Desktop\Programlar\USART3_low_level_transmit\cmsis_boot /I..\..\..\..\..\Users\EMP_OTTO\Desktop\Programlar /I..\..\..\..\..\Users\EMP_OTTO\Desktop\Programlar\USART3_low_level_transmit">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="1401a16c8a4">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="1401a16d23d">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1401a16d23f">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="14019fc4e91">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="1401a16c903">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="1401a16c8a8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14019fc4e90">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1401a16c907">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\EMP_OTTO\Desktop\USART /I..\..\..\..\..\Users\EMP_OTTO\Desktop\USART\cmsis_boot /I..\..\..\..\..\Users\EMP_OTTO\Desktop\USART\cmsis_lib /I..\..\..\..\..\Users\EMP_OTTO\Desktop\USART\cmsis /I..\..\..\..\..\Users\EMP_OTTO\Desktop /I..\..\..\..\..\Users\EMP_OTTO\Desktop\USART\cmsis_lib\include">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="1401a16c8a4">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="1401a16d23d">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1401a16d23f">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="14019fc4e91">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="1401a16c903">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="1401a16c8a8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14019fc4e90">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1401a16c907">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\EMP_OTTO\Desktop\USART /I..\..\..\..\..\Users\EMP_OTTO\Desktop\USART\cmsis_boot /I..\..\..\..\..\Users\EMP_OTTO\Desktop\USART\cmsis /I..\..\..\..\..\Users\EMP_OTTO\Desktop">
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="14019fc4e91">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14019fc4e90">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+   </includePath>
+</dependencies>
