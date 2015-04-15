@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=RTC.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\RTC -TC:\CooCox\CoIDE\configuration\ProgramData\RTC/arm-gcc-link.ld -g">
+      <target file="RTC.elf" lastModified="140879847dc">
+         <source file="..\obj\stm32f4xx_pwr.o" lastModified="140879841ad"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="1408798421e"/>
+         <source file="..\obj\main.o" lastModified="1408798429c"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1408798437b"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="1408798440d"/>
+         <source file="..\obj\syscalls.o" lastModified="14087984480"/>
+         <source file="..\obj\stm32f4xx_rtc.o" lastModified="1408798459a"/>
+      </target>
+   </processor>
+</history>
