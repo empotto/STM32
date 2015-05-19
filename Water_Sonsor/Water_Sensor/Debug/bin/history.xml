@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.9.3 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=Water_Sensor.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Water_Sensor -TC:\CooCox\CoIDE\configuration\ProgramData\Water_Sensor/arm-gcc-link.ld -g">
+      <target file="Water_Sensor.elf" lastModified="14d6bb97213">
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="14d6bac690f"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14d6bac6a05"/>
+         <source file="..\obj\main.o" lastModified="14d6bb96f6e"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14d6bac6d13"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="14d6bac6f03"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14d6bac7052"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14d6bac7154"/>
+         <source file="..\obj\syscalls.o" lastModified="14d6bb2c282"/>
+      </target>
+   </processor>
+</history>

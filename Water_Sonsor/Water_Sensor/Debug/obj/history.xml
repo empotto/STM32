@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\EmpOtto\Desktop -I..\..\..\..\..\Users\EmpOtto\Desktop\Water_Sonsor\cmsis -I..\..\..\..\..\Users\EmpOtto\Desktop\Water_Sonsor -I..\..\..\..\..\Users\EmpOtto\Desktop\Water_Sonsor\cmsis_lib\include -I..\..\..\..\..\Users\EmpOtto\Desktop\Water_Sonsor\cmsis_boot -I..\..\..\..\..\Users\EmpOtto -I..\..\..\..\..\Users\EmpOtto\Desktop\Water_Sonsor\cmsis_lib">
+      <target file="stm32f4xx_rcc.o" lastModified="14d6bac6d13">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14d6ba023d9"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="14d6bac7154">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14d6ba37c80"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="14d6bac7052">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14d6ba06cf8"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="14d6bac6f03">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="14d6ba18aca"/>
+      </target>
+      <target file="main.o" lastModified="14d6bb96f6e">
+         <source file="..\..\..\main.c" lastModified="14d6bb959e0"/>
+      </target>
+      <target file="syscalls.o" lastModified="14d6bb2c282">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="14d6bb28112"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="14d6bac690f">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="14d6ba276cf"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="14d6bac6a05">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14d6ba2ee94"/>
+      </target>
+   </processor>
+</history>
