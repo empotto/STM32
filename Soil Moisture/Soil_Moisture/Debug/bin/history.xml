@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.9.3 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=Soil_Moisture.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Soil_Moisture -TC:\CooCox\CoIDE\configuration\ProgramData\Soil_Moisture/arm-gcc-link.ld -g">
+      <target file="Soil_Moisture.elf" lastModified="14d6bf95d16">
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="14d6bf9515c"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14d6bf95242"/>
+         <source file="..\obj\main.o" lastModified="14d6bf953d2"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14d6bf955f9"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="14d6bf9581a"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14d6bf95984"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14d6bf95a8a"/>
+         <source file="..\obj\syscalls.o" lastModified="14d6bf72cf8"/>
+      </target>
+   </processor>
+</history>
